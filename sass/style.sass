@@ -1,0 +1,56 @@
+@import url("https://fonts.google.com/specimen/Outfit")
+
+:root
+  font-size: 17px
+
+html
+  display: grid
+  place-items: center
+  overflow: hidden
+
+body
+  font-family: "Open Sans", sans-serif
+  width: 1440px
+  height: 800px
+  background: #D5E1EF
+  display: grid
+  place-items: center
+
+  
+  .card
+    background: #fff
+    width: 320px
+    height: 495px
+    color: hsl(217,56%,31%)
+    text-align: center
+    letter-spacing: -0.5px
+    padding: 1rem
+    box-sizing: border-box
+    border-radius: 1rem
+    box-shadow: 0px 0px 2rem grey
+
+    &__header img
+      border-radius: .7rem
+      overflow: hidden
+    
+    &__body
+      padding: 1rem
+      box-sizing: border-box
+
+      & > *
+        margin: 2rem 0
+      
+    &__title
+      font-weight: 900
+      font-size: 1.2rem
+      line-height: 1.4
+      max-width: 250px
+      margin: auto
+    
+    &__description
+      font-size: .85rem
+      line-height: 1.4
+      max-width: 250px
+      margin: auto
+      padding: 1rem
+  
