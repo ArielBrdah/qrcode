@@ -1,7 +1,14 @@
-@import url("https://fonts.google.com/specimen/Outfit")
+// @import url("https://fonts.google.com/specimen/Outfit")
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap')
 
 :root
-  font-size: 17px
+  font-size: 15px
+  font-family: Outfit, sans-serif
+  --c-white: hsl(0, 0%, 100%)
+  --c-lgray: hsl(212, 45%, 89%)
+  --c-grblue: hsl(220, 15%, 55%)
+  --dark-blue: hsl(218, 44%, 22%)
 
 html
   display: grid
@@ -9,21 +16,20 @@ html
   overflow: hidden
 
 body
-  font-family: "Open Sans", sans-serif
-  width: 1440px
-  height: 800px
-  background: #D5E1EF
+  font-family: Outfit, sans-serif
+  // width: 1440px
+  // height: 800px
+  background: var(--c-lgray)
   display: grid
   place-items: center
 
   
   .card
-    background: #fff
+    background: var(--c-white)
     width: 320px
     height: 495px
-    color: hsl(217,56%,31%)
+    color: var(--dark-blue)
     text-align: center
-    letter-spacing: -0.5px
     padding: 1rem
     box-sizing: border-box
     border-radius: 1rem
@@ -34,23 +40,27 @@ body
       overflow: hidden
     
     &__body
-      padding: 1rem
+      padding: 1rem 0rem
       box-sizing: border-box
 
       & > *
-        margin: 2rem 0
+        margin: 2.5rem 0
+        max-width: 260px
+        box-sizing: border-box
+        padding: .5rem 0rem //0.4821429rem
       
     &__title
-      font-weight: 900
-      font-size: 1.2rem
-      line-height: 1.4
-      max-width: 250px
+      font-weight: 700
+      font-size: 1.5rem
+      line-height: 1.2
       margin: auto
     
     &__description
-      font-size: .85rem
-      line-height: 1.4
-      max-width: 250px
+      font-size: 1rem
+      font-weight: 400
+      line-height: 1.2
       margin: auto
-      padding: 1rem
+      // padding: .7rem 0rem //0.4821429rem
+      box-sizing: border-box
+      color: var(--c-grblue)
   
